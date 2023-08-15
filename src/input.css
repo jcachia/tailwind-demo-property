@@ -1,0 +1,30 @@
+/* Import from classes tailwind: */
+/* init the tailwind.config.js with `npx`tailwindcss init` command, then add this dir to the file that is created under "components" */
+/* Then you must use the tailwind build command added to the package.json to watch for changes */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* the layer directive is how you can modify css that is compiled */
+/* This is an example of customizing a style */
+/* the text below adds the style to the base layer */
+/* @layer base {
+  a{
+    @apply text-green-500 underline
+  }
+} */
+
+/* This allows you to add custom styling to reusable components */
+/* @layer components {
+  .custom-button {
+    @apply p-4 text-white bg-indigo-500
+  }
+} */
+
+/* This allows you to modify an existing utility class */
+/* Note you can override an existing, or add a new */
+/* @layer utilities {
+  .text-green-501 {
+    color: greenyellow;
+  }
+} */

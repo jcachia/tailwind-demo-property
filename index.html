@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="public/styles.css">
+  <title>Prime Properties</title>
+  <!-- This is a example applcation using tailwind -->
+</head>
+<body>
+  <nav class="bg-white shadow-lg">
+    <!-- This allows the max width to be at the 2xl, margin auto, and 4 padding: -->
+    <div class="max-w-6xl mx-auto px-4"> 
+      <div class="flex justify-between">
+        <div class="flex space-x-7">
+          <div>
+            <a class="flex items-center py-4 px-2" href="#">
+              <img class="h-8 w-8 mr-2" src="public/images/house.png" alt="house icon">
+              <span class="font-semibold text-gray-500 text-lg">Prime Properties</span>
+            </a>
+          </div>
+          <div class="hidden md:flex items-center space-x-1"> <!-- hides this dev when less than md breakpoint, items-center misaligns this a bit -->
+            <a class="py-4 px-2 text-green-500 font-semibold border-b-4 border-green-500" href="#">Home</a>
+            <a class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition duration-300" href="#">Services</a>
+            <a class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition duration-300" href="#">About</a>
+            <a class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition duration-300" href="#">Contact</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Site banner -->
+  <main class="mt-10 px-4 md:mt-16 mx-auto m-w-7xl lg:mt-20 lg:px-8 xl:mt-28">
+    <div class="text-left sm:text-center">
+      <h1 class="tracking-tight font-extrabold text-4xl sm:text-5xl md:text-6xl">
+        <span class="block xl:inline">Premium Lorem</span>
+        <span class="block text-green-500 xl:inline">Non-premium Ipsum</span>
+      </h1>
+      <p class="mt-3 text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus in erat eleifend odio lobortis dapibus. Vivamus finibus
+      finibus lorem mattis malesuada. Duis vulputate metus eget ante pretium, ac tristique tortor ultricies. Donec ac volutpat
+      tellus. Ut rhoncus dignissim dolor id sagittis. Aenean tincidunt leo mi, eu laoreet lacus viverra id. Lorem ipsum dolor
+      sit amet, consectetur adipiscing elit.</p>
+    </div>
+    <div class="mt-5 sm:mt-8 sm:flex sm:justify-center">
+      <div class="md:m-2">
+        <a href="" class="bg-green-500 text-white px-8 py-3 flex w-full justify-center rounded-md">View Lorem</a>
+      </div>
+      <div class="md:m-2">
+        <a href="" class="bg-green-200 text-green-700 px-8 py-3 flex w-full justify-center rounded-md">Explore Ipsum</a>
+      </div>
+    </div>
+  </main>
+  <!-- Site banner -->
+
+  <!-- Cards header -->
+  <div class="mt-5 p-10 flex justify-center">
+    <h2 class="mb-2 text-3xl text-gray-500">Recent Lorems</h2>
+  </div>
+
+  <!-- Cards container -->
+  <div class="p-10 grid gap-5 sm:grid-cols-1 md:grid-cols-3"> <!-- demo included 'lg:grid-cols-3 xl:grid-cols-3', but I don't think that is necessary b/c everything above md should be 3-col-->
+    <!-- Card -->
+    <div class="rounded overflow-hidden shadow-lg"> <!-- overflow hidden prevents the image from overflowing the edge of the card.  This allows the photo to have rounded images-->
+      <img class="w-full" src="public/images/home1.jpg" alt="">
+      <div class="px-6 pt-4">
+        <div class="font-bold text-xl mb-2">Orchid Villa</div>
+        <p class="text-gray-700">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illo ipsa quod adipisci porro iusto asperiores consectetur expedita impedit</p>
+      </div>
+      <div class="px-6 pt-4 pb-2">
+        <span class="inline-block text-green-300 text-sm font-bold px-3 py-1 mr-2 mb-2">$4,500,000</span>
+      </div>
+      <div class="px-6 pt-4 pb-2">
+        <span class="inline-block px-3 py-1 mr-2 mb-2 text-sm font-semibold bg-gray-200 text-gray-700 rounded-full">7 Dolor</span>
+        <span class="inline-block px-3 py-1 mr-2 mb-2 text-sm font-semibold bg-gray-200 text-gray-700 rounded-full">9 Elit</span>
+      </div>
+      <div class="px-6 pt-4 pb-10">
+        <button class="inline-block px-4 py-1 mr-2 mb-2 font-bold bg-green-500 text-white rounded-full">View Lorem</button>
+      </div>
+    </div>
+    <!-- end card -->
+
+    <!-- Card -->
+    <div class="rounded overflow-hidden shadow-lg">
+      <!-- overflow hidden prevents the image from overflowing the edge of the card.  This allows the photo to have rounded images-->
+      <img class="w-full" src="public/images/home2.jpg" alt="">
+      <div class="px-6 pt-4">
+        <div class="font-bold text-xl mb-2">Gracia Place</div>
+        <p class="text-gray-700">Nam iaculis leo felis, eget rhoncus lacus aliquam a. Ut gravida ex et ex sollicitudin varius. Vivamus blandit id elit epretium.</p>
+      </div>
+      <div class="px-6 pt-4 pb-2">
+        <span class="inline-block text-green-300 text-sm font-bold px-3 py-1 mr-2 mb-2">$4,500,000</span>
+      </div>
+      <div class="px-6 pt-4 pb-2">
+        <span class="inline-block px-3 py-1 mr-2 mb-2 text-sm font-semibold bg-gray-200 text-gray-700 rounded-full">4 Dolor</span>
+        <span class="inline-block px-3 py-1 mr-2 mb-2 text-sm font-semibold bg-gray-200 text-gray-700 rounded-full">3 Elit</span>
+      </div>
+      <div class="px-6 pt-4 pb-10">
+        <button class="inline-block px-4 py-1 mr-2 mb-2 font-bold bg-green-500 text-white rounded-full">View Lorem</button>
+      </div>
+    </div>
+    <!-- end card -->
+
+    <!-- Card -->
+    <div class="rounded overflow-hidden shadow-lg">
+      <!-- overflow hidden prevents the image from overflowing the edge of the card.  This allows the photo to have rounded images-->
+      <img class="w-full" src="public/images/home3.jpg" alt="">
+      <div class="px-6 pt-4">
+        <div class="font-bold text-xl mb-2">Nexa Epitome</div>
+        <p class="text-gray-700">Quisque a feugiat sem. Nulla sollicitudin placerat lorem, a commodo ligula ornare et. Pellentesque nec mollis metus.</p>
+      </div>
+      <div class="px-6 pt-4 pb-2">
+        <span class="inline-block text-green-300 text-sm font-bold px-3 py-1 mr-2 mb-2">$4,500,000</span>
+      </div>
+      <div class="px-6 pt-4 pb-2">
+        <span class="inline-block px-3 py-1 mr-2 mb-2 text-sm font-semibold bg-gray-200 text-gray-700 rounded-full">6 Dolor</span>
+        <span class="inline-block px-3 py-1 mr-2 mb-2 text-sm font-semibold bg-gray-200 text-gray-700 rounded-full">4 Elit</span>
+      </div>
+      <div class="px-6 pt-4 pb-10">
+        <button class="inline-block px-4 py-1 mr-2 mb-2 font-bold bg-green-500 text-white rounded-full">View Lorem</button>
+      </div>
+    </div>
+    <!-- end card -->
+  </div>
+  <!-- end card container -->
+
+  <!-- middle banner -->
+  <div class="h-screen py-20" style="background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url('public/images/luxury.jpg');"> <!-- using inline styles for background images. h-screen allows the background image to span the entire height of the viewport. -->
+    <div class="container mx-auto px-6 mt-14">
+      <h2 class="text-4xl font-bold text-white mb-2">Experience Lorem Like Never Before</h2>
+      <h3 class="text-2xl text-gray-200 mb-8">So Many Greats, Across the Everywhere</h3>
+      <button class="text-white font-bold tracking-wider shadow-lg uppercase border-2 px-8 py-4">Explore greats</button>
+    </div>
+  </div>
+  <!-- middle banner end -->
+
+  <!-- Cards header -->
+  <div class="mt-20 p-10 flex justify-center">
+    <h2 class="mb-2 text-3xl text-gray-500">Greats</h2>
+  </div>
+  
+  <!-- Cards container -->
+  <div class="p-10 grid gap-5 sm:grid-cols-1 md:grid-cols-3">
+    <!-- demo included 'lg:grid-cols-3 xl:grid-cols-3', but I don't think that is necessary b/c everything above md should be 3-col-->
+    <!-- Card -->
+    <div class="pb-5 rounded overflow-hidden shadow-lg">
+      <!-- overflow hidden prevents the image from overflowing the edge of the card.  This allows the photo to have rounded images-->
+      <img class="w-full" src="public/images/newyork.jpg" alt="">
+      <div class="px-6 pt-4">
+        <div class="font-bold text-xl mb-2">New Great</div>
+        <p class="text-gray-700">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illo ipsa quod adipisci porro iusto asperiores consectetur expedita impedit</p>
+      </div>
+    </div>
+    <!-- end card -->
+  
+    <!-- Card -->
+    <div class="pb-5 rounded overflow-hidden shadow-lg">
+      <!-- overflow hidden prevents the image from overflowing the edge of the card.  This allows the photo to have rounded images-->
+      <img class="w-full" src="public/images/california.jpg" alt="">
+      <div class="px-6 pt-4">
+        <div class="font-bold text-xl mb-2">San Great</div>
+        <p class="text-gray-700">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illo ipsa quod adipisci porro
+          iusto asperiores consectetur expedita impedit</p>
+      </div>
+    </div>
+    <!-- end card -->
+
+    <!-- Card -->
+    <div class="pb-5 rounded overflow-hidden shadow-lg">
+      <!-- overflow hidden prevents the image from overflowing the edge of the card.  This allows the photo to have rounded images-->
+      <img class="w-full" src="public/images/ny.jpg" alt="">
+      <div class="px-6 pt-4">
+        <div class="font-bold text-xl mb-2">Great York</div>
+        <p class="text-gray-700">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illo ipsa quod adipisci porro
+          iusto asperiores consectetur expedita impedit</p>
+      </div>
+    </div>
+    <!-- end card -->
+  </div>
+  <!-- end card container -->
+  
+  <!-- bottom banner -->
+  <div class="py-20"
+    style="background: linear-gradient(315deg, #D1FAE5, #10B981 74%);">
+    <div class="container mx-auto px-6">
+      <h2 class="text-4xl font-bold text-white mb-2">Save a bunch of moolah with us</h2>
+      <h3 class="text-2xl text-gray-200 mb-8">Fees so low you'll flip</h3>
+      <button class="rounded-2xl bg-white font-bold shadow-lg uppercase border-2 px-8 py-4">Gimmie Moneys</button>
+    </div>
+  </div>
+  <!-- bottom banner end -->
+
+  <!-- testiomonials header -->
+  <div class="mt-20 p-10 flex justify-center">
+    <h2 class="mb-2 text-3xl text-gray-500">Stuff Human People Say</h2>
+  </div>
+
+  <!-- bottom cards -->
+  <div class="p-10 grid sm:grid-cols-1 md:grid-cols-3 gap-4">
+    <!-- card -->
+    <div class="mx-auto w-72 shadow-lg bg-white rounded-xl p-4">
+      <p class="text-gray-600">
+        <span class="text-green-500 font-bold text-lg">"</span>
+        Sed quibusdam labore, esse molestias excepturi vitae delectus ducimus, ex totam cupiditate ab!
+       <span class="text-green-500 font-bold text-lg">"</span>
+      </p>
+      <div class="flex bg-green-100 rounded-full items-center">
+        <a class="block relative" href="#">
+          <img class="h-10 w-10 rounded-full mx-auto" src="public/images/avatar.png" alt="">
+        </a>
+        <div class="flex flex-col ml-2 justify-between">
+          <span class="text-green-500 font-semibold text-sm">Sir Issac</span>
+          <span class="flex items-center text-xs">Director</span>
+        </div>
+      </div>
+    </div>
+    <!-- card end -->
+
+    <!-- card -->
+    <div class="mx-auto w-72 shadow-lg bg-white rounded-xl p-4">
+      <p class="text-gray-600">
+        <span class="text-green-500 font-bold text-lg">"</span>
+          Aenean sit amet turpis felis. Nunc et fermentum ex. Praesent scelerisque diam vel ornare malesuada.
+        <span class="text-green-500 font-bold text-lg">"</span>
+      </p>
+      <div class="flex bg-green-100 rounded-full items-center">
+        <a class="block relative" href="#">
+          <img class="h-10 w-10 rounded-full mx-auto" src="public/images/avatar.png" alt="">
+        </a>
+        <div class="flex flex-col ml-2 justify-between">
+          <span class="text-green-500 font-semibold text-sm">Hulk Hogan</span>
+          <span class="flex items-center text-xs">Body Slam Aficionado</span>
+        </div>
+      </div>
+    </div>
+    <!-- card end -->
+
+    <!-- card -->
+    <div class="mx-auto w-72 shadow-lg bg-white rounded-xl p-4">
+      <p class="text-gray-600">
+        <span class="text-green-500 font-bold text-lg">"</span>
+          Nunc vel consequat lectus. Cras at malesuada nunc, a ultrices felis. Etiam convallis suscipit massa,
+        <span class="text-green-500 font-bold text-lg">"</span>
+      </p>
+      <div class="flex bg-green-100 rounded-full items-center">
+        <a class="block relative" href="#">
+          <img class="h-10 w-10 rounded-full mx-auto" src="public/images/avatar.png" alt="">
+        </a>
+        <div class="flex flex-col ml-2 justify-between">
+          <span class="text-green-500 font-semibold text-sm">John Gotti</span>
+          <span class="flex items-center text-xs">Client Relocation Specialist</span>
+        </div>
+      </div>
+    </div>
+    <!-- card end -->
+  </div>
+  <!-- bottom card end -->
+
+  <!-- contact header -->
+  <div class="mt-20 p-10 flex justify-center">
+    <h2 class="mb-2 text-3xl text-gray-500">Who ya gonna call</h2>
+  </div>
+
+  <!-- form -->
+  <div class="flex bg-green-300 mt-5 p-10 justify-center items-center">
+    <form class="w-full max-w-lg">
+      <!-- name -->
+      <div class="flex flex-wrap mb-6">
+        <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+          <label class="block uppercase text-xs text-gray-700 font-bold tracking-wide mb-2" for="">First Name</label>
+          <input class="block py-2 px-4 mb-3 marker:rounded text-gray-700 w-full border-green-500" type="text" placeholder="First">
+          <p class="text-sm text-green-500 italic">Come on and fill this out</p>
+        </div>
+        <div class="w-full md:w-1/2 px-3">
+          <label class="block uppercase text-xs text-gray-700 font-bold tracking-wide mb-2" for="">Last Name</label>
+          <input class="block py-2 px-4 rounded text-gray-700 w-full border-green-500" type="text" placeholder="Last">
+        </div>
+      </div>
+      <!-- end name -->
+
+      <!-- email -->
+      <div class="flex mb-6">
+        <div class="w-full px-3"> 
+          <label class="block uppercase text-xs text-gray-700 font-bold tracking-wide mb-2" for="">Email</label>
+          <input class="block py-2 px-4 mb-3 rounded text-gray-700 w-full border-green-500" type="text" placeholder="email@example.com">
+          <p class="text-sm text-gray-400 italic">We'll probably spam you</p>
+        </div>
+      </div>
+      <!-- email end -->
+
+      <!-- message -->
+      <div class="flex mb-6">
+        <div class="w-full px-3"> 
+          <label class="block uppercase text-xs text-gray-700 font-bold tracking-wide mb-2" for="">Message</label>
+          <textarea class="no-resize resize-none appearance-none block py-2 px-4 mb-3 rounded text-gray-700 w-full border-green-500" name="" id="" cols="30" rows="10" placeholder="What's on your mind?"></textarea>
+          <p class="text-sm text-gray-400 italic">Tell me something.  Preferably something good.</p>
+        </div>
+      </div>
+      <!-- message end -->
+
+      <!-- button -->
+      <div class="mx-3 md:flex md:items-center">
+        <div class="md:w-1/3">
+          <button class="shadow rounded bg-green-400 text-white py-2 px-4">Send</button>
+        </div>
+      </div>
+      <!-- button end -->
+    </form>
+  </div>
+  <!-- form end -->
+
+  <!-- footer -->
+  <footer class="pt-40 px-4 divide-y">
+    <div class="container flex flex-col justify-between mx-auto space-y-8 lg:flex-row lg:space-y-0">
+      <div class="lg:w-1/3">
+        <a class="flex justify-center" href="#">
+          <div class="flex w-12 h-12">
+            <img class="h-8 w-8 mr-2" src="public/images/house.png" alt="">
+          </div>
+          <span class="font-semibold text-gray-500 text-2xl">
+            Prime Properties
+          </span>
+        </a>
+      </div>
+
+      <div class="grid grid-cols-2 sm:grid-cols-4 gap-x-3 gap-y-8 text-sm lg:w-2/3">
+        <div class="space-y-3">
+          <h3 class="text-green-500 uppercase tracking-wide">Product</h3>
+          <ul class="space-y-1">
+            <li><a href="">Features</a></li>
+            <li><a href="">Integrations</a></li>
+            <li><a href="">Pricing</a></li>
+            <li><a href="">FAQs</a></li>
+          </ul>
+        </div>
+        <div class="space-y-3">
+          <h3 class="text-green-500 uppercase tracking-wide">Company</h3>
+          <ul class="space-y-1">
+            <li><a href="">Privacy</a></li>
+            <li><a href="">Terms of Service</a></li>
+          </ul>
+        </div>
+        <div class="space-y-3">
+          <h3 class="text-green-500 uppercase tracking-wide">Developers</h3>
+          <ul class="space-y-1">
+            <li><a href="">Public API</a></li>
+            <li><a href="">Documentation</a></li>
+            <li><a href="">Guides</a></li>
+          </ul>
+        </div>
+
+        <div class="space-y-3">
+          <h3 class="text-green-500 uppercase tracking-wide">Social Media</h3>
+          <div class="flex justify-start space-x-3">
+            <a href="#">
+              <img class="w-5 h-5 fill-current" src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Facebook_icon_%28black%29.svg" alt="">
+            </a>
+            <a href="">
+              <img class="w-5 h-5 fill-current" src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Twitter_bird_logo_black.svg" alt="">
+            </a>
+            <a href="">
+              <img class="w-5 h-5 fill-current" src="https://upload.wikimedia.org/wikipedia/commons/6/65/Black_Instagram_icon.svg" alt="">
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="py-6 text-center text-green-500 text-xs">
+      © 2023 Company Co., Inc. All rights reserved
+    </div>
+  </footer>
+  <!-- footer end -->
+
+
+
+</body>
+</html>
